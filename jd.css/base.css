@@ -1,0 +1,54 @@
+/*通用样式*/
+*,
+::before,
+::after{
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+	/* 清除点击高亮效果 */
+	-webkit-tap-highlight-color: transparent;
+	/* 盒模型 */
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	/* 设置默认字体样式  移动端默认的字体为sans-sarif*/
+	font-family: "microsoft yahei",sans-serif;
+}
+	/* input标签默认样式设置*/
+	input{
+		border: none;
+		-webkit-appearance: none;
+	}
+	a{
+		text-decoration: none;
+	}
+	ol,ul{
+		list-style: none;
+	}
+	.f_l{
+		float: left;
+	}
+	.f_r{
+		float: right;
+	}
+	.clearfix::before,
+	.clearfix::after{
+		content: '';
+		display: block;
+		height: 0;
+		line-height: 0;
+		visibility: hidden;
+		clear: both;
+	}
+	/* 边框的通用属性 */
+	.b_t{
+		border-top: solid #eee 1px;
+	}
+	.b_b{
+		border-bottom: solid #eee 1px;
+	}
+	.b_l{
+		border-left: solid #eee 1px;
+	}
+	.b_r{
+		border-right: solid #eee 1px;
+	}

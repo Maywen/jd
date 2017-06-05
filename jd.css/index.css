@@ -1,0 +1,247 @@
+.container{
+	width: 100%;
+	min-height: 800px;
+	background-color: #eee;
+}
+/* 顶部通栏 */
+.header{
+	width: 100%;
+	height: 40px;
+	position: fixed;
+	padding-left: 70px;
+	padding-right: 60px;
+	background-color: rgba(201, 21, 35,0);
+	z-index: 99;
+}
+.header .log{
+	width: 60px;
+	height: 36px;
+	position: absolute;
+	left: 5px;
+	top: 2px;
+	background: url("../images/sprites.png") no-repeat 0 -103px;
+	background-size: 200px 200px;
+}
+.header .search{
+	width: 100%;
+	height: 30px;
+	margin-top: 5px;
+	border-radius: 15px;
+	padding-left: 25px;
+}
+.header .glass{
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 10px;
+	left: 75px;
+	background: url("../images/sprites.png") no-repeat -60px -109px;
+	background-size: 200px 200px;
+}
+.header .login{
+	height: 40px;
+	line-height: 40px;
+	color: #fff;
+	position: absolute;
+	right: 10px;
+	top: 0px;
+	font-size: 17px;
+}
+/* 轮播图设置 */
+.banner{
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+.banner ul.img{
+	width: 1000%;
+	transform: translateX(-10%);
+}
+.banner ul.img li{
+	float: left;
+	width: 10%;
+}
+.banner ul.img li a{
+	display: block;
+	width: 100%;
+}
+.banner ul.img li a img{
+	display: block;
+	width: 100%;
+	
+}
+/* 轮播图list */
+.banner ul.list{
+	position: absolute;
+	left: 50%;
+	margin-left: -40px;
+	bottom: 20px;
+}
+.banner ul.list li{
+	float: left;
+	margin-left: 5px;
+	width: 5px;
+	height: 5px;
+	border: solid #fff 1px;
+	border-radius: 50%;
+}
+.current{
+	background-color: #000;
+}
+/* 导航栏 */
+.nav{
+	width: 100%;
+	border-bottom: solid #ccc 1px;
+	background-color: #fff;
+}
+.nav ul{
+	/* padding-top: 5px; */
+	width: 100%
+}
+.nav li{
+	float: left;
+	width: 25%;
+	margin-top: 5px;
+}
+.nav li a{
+	width: 100%;
+	display: block;
+	text-align: center;
+}
+.nav li a img{
+	width: 60%;
+}
+.nav li a span{
+	display: block;
+}
+/* 内容主要区域 */
+.main{
+	width: 100%;
+	margin-top: 10px;
+}
+.flash_sale{
+	width: 100%;
+	background-color: #fff;
+	box-shadow: 0 0 2px gray;
+	min-height: 150px;
+}
+.sale_top{
+	width: 100%;
+	height: 30px;
+	position: relative;
+	padding: 5px;
+}
+.clock{
+	width: 20px;
+	height: 25px;
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	background: url("../images/seckill-icon.png") no-repeat;
+	background-size: 20px 25px;
+}
+.sale_top .ms{
+	margin-left: 25px;
+	color: red;
+	font-weight: normal;
+}
+.sale_top .time{
+	position: absolute;
+	top: 8px;
+	left: 90px;
+}
+.sale_top .time li{
+	float: left;
+	margin-right: 5px;
+}
+.sale_top .time li:nth-child(3n-1){
+	background-color: #000;
+	color: #fff;
+	/* padding: 0 2px; */
+	height: 15px;
+	width: 15px;
+	line-height: 15px;
+	text-align: center;
+	/* margin-top: 5px; */
+}
+.sale_top .time li:nth-child(3n-2){
+	background-color: #000;
+	color: #fff;
+	height: 15px;
+	width: 15px;
+	line-height: 15px;
+	text-align: center;
+}
+.sale_top .more{
+	float: right;
+}
+.sale_top .more a{
+	float: right;
+	color: darkgrey;
+}
+.sale_bottom{
+	width: 100%;
+}
+.sale_bottom .pic{
+	width: 100%;
+}
+.sale_bottom .pic li{
+	float: left;
+	width: 33.333333%;
+	text-align: center;
+	border-right: solid 1px #ccc;
+}
+.sale_bottom .pic li:last-child{
+	border-right: none;
+}
+.sale_bottom .pic li a{
+	width: 60%;
+	display: inline-block;
+}
+.sale_bottom .pic li a img{
+	width: 100%;
+}
+.sale_bottom .pic li p{
+	color: red;
+	font-size: 12px;
+}
+.sale_bottom .pic li p:last-child{
+	text-decoration: line-through;
+	margin-top: 10px;
+	color: #000;
+}
+.content{
+	width: 100%;
+	margin-top: 10px;
+	background-color: #fff;	
+	border: solid #ccc 1px;
+}
+.content_header{
+	padding-left: 20px;
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	font-size: 18px;
+	color: rgb(201, 21, 35);
+	border-bottom: solid #ccc 1px;
+}
+.content_header span::before{
+	content: '';
+	display: inline-block;
+	height: 16px;
+	width: 5px;
+	background-color: rgb(201, 21, 35);
+	margin-right: 5px;
+	vertical-align: middle;
+}
+.content ul li{
+	width: 50%;
+	overflow: auto;
+}
+.content ul li a{
+	width: 100%;
+	display: block;
+}
+.content ul li a img{
+	width: 100%;
+}
